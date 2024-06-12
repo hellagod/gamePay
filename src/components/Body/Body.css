@@ -1,0 +1,12 @@
+.questions-gradient{
+    position: absolute;
+    left: calc(-1700px + 50%);
+    /*top: 50%;*/
+    transform: translate(0, -20%);
+}
+
+.subscribe-gradient {
+    position: absolute;
+    left: calc(-1400px + 50%);
+    bottom: 0;
+}

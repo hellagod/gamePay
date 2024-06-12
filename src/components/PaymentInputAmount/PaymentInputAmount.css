@@ -1,0 +1,40 @@
+.payment-input-amount-container{
+    z-index: 10;
+}
+
+.payment-input-amount-choose{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.payment-input-amount-item{
+    position: relative;
+    background-color: rgba(34, 47, 124, 0.6);
+    border: 2px solid #3249D0;
+    border-radius: 10px;
+    margin: 0;
+    padding: 7px 15px;
+    transition: all .1s ease;
+    color: #e9e9eb;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.payment-input-amount-item:hover{
+    border-color: #4963FF;
+}
+
+.payment-input-amount-text > input{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+}

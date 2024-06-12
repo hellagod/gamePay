@@ -1,0 +1,36 @@
+.error-message-container,
+.error-message-container * {
+    box-sizing: border-box;
+}
+
+.error-message-container {
+    position: absolute;
+    width: fit-content;
+    top: -15px;
+    right: 15px;
+    z-index: 50;
+    height: 40px;
+}
+
+.error-message-vector {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    overflow: visible;
+}
+
+.error-message {
+    background:  #e9e9eb;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.error-message-text {
+    color: #e14d63;
+    text-align: left;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}

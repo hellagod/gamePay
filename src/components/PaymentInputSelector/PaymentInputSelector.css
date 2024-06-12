@@ -1,0 +1,117 @@
+.custom-select {
+    position: relative;
+    max-width: 100%;
+    z-index: 200;
+}
+
+.select-button {
+    width: 100%;
+    padding: 0 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    background-color: rgba(34, 47, 124, 0.6);
+    border: 2px solid #3249D0;
+    border-radius: 10px;
+    margin: 0;
+    transition: all .3s ease;
+}
+
+.selected-value {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat-Black", sans-serif;
+    color: #9EA3C1;
+    transition: all .2s ease
+}
+
+.selected-value.active {
+    color: #e9e9eb;
+}
+
+.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #9EA3C1;
+    transition: transform ease-in-out 0.2s;
+}
+
+.select-dropdown {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    background-color: #283B81;
+    border: 2px solid #3249D0;
+    border-radius: 10px;
+    padding: 7px;
+    margin-top: 3px;
+    max-height: 205px;
+    overflow-y: auto;
+    transition: 0.2s ease;
+    transform: scaleY(0) translate(0, -80%);
+    opacity: 0;
+    visibility: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat-Black", sans-serif;
+    color: #e9e9eb;
+    z-index: 999;
+}
+
+.select-dropdown li {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.select-dropdown li label {
+    width: 100%;
+    padding: 10px 17px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    background: transparent;
+}
+
+.select-dropdown::-webkit-scrollbar {
+    width: 0;
+}
+
+.select-dropdown li:hover{
+    border-radius: 10px;
+    background: linear-gradient(90.69deg, rgba(174, 104, 243, 0.30) 0%, rgba(15, 167, 177, 0.30) 100%);
+}
+
+.select-dropdown li .active{
+    border-radius: 10px;
+    background: linear-gradient(90.69deg, rgba(174, 104, 243, 0.30) 0%, rgba(15, 167, 177, 0.30) 100%);
+}
+
+
+.select-dropdown input[type="radio"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+.custom-select.active .select-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    z-index: 999;
+}
+.select-button > svg{
+    transition: 0.2s ease;
+}
+.select-button > svg.active{
+    transform: rotate(180deg);
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,123 @@
+.game-card,
+.game-card * {
+    box-sizing: border-box;
+}
+
+.game-card {
+    background: #18255a;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #2d3faf;
+    border-width: 2px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 228px;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.game-card:hover{
+    box-shadow: #050613 0 4px 20px;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+
+.game-disc-img {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 146px;
+    position: static;
+}
+
+.game-image {
+    border-radius: 10px;
+    width: 204px;
+    height: 146px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.discount {
+    transition: border, background 0.1s ease-in-out;
+    border: 1px #e14d63 solid;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #e14d63;
+    border-radius: 5px;
+    padding: 1px 8px 1px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 10px;
+    line-height: 17px;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.game-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.game-title {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 900;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+@media (max-width: 851px) {
+    .game-title{
+        font-size: 18px;
+
+    }
+    .game-card {
+         width: 172px;
+    }
+    .game-image{
+        width: 150px;
+        height: 145px;
+    }
+    .game-disc-img{
+        width: 150px;
+        height: 145px;
+    }
+    .games-title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .games-block{
+        gap: 10px;
+    }
+
+}

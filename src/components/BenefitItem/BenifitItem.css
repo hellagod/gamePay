@@ -1,0 +1,104 @@
+.benefit-item-container,
+.benefit-item-container * {
+    box-sizing: border-box;
+}
+
+.benefit-item-container {
+    height: 230px;
+    width: 370px;
+    position: relative;
+    background: rgba(39, 39, 172, 0.5);
+    border: solid 3px #3edc80;
+    border-radius: 20px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    backdrop-filter: blur(5px);
+    box-shadow: #4DF292 0 0 30px 0;
+}
+
+.benefit-item-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefit-item-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.benefit-item-title {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 32px;
+    line-height: 27px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.benefit-item-text {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.benefit-item-number {
+    color: #3edc80;
+    text-align: right;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 53px;
+    line-height: 45px;
+    top: calc(50% - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.benefit-item-icon {
+    width: 49px;
+    overflow: visible;
+}
+
+
+@media (max-width: 851px) {
+    .benefit-item-container{
+        max-width: 355px;
+        border: solid 2px #3edc80;
+        padding: 15px;
+        gap: 15px;
+        height: fit-content;
+        box-shadow: #4DF292 0 0 5px 0;
+    }
+    .benefit-item-icon{
+        width: 30px;
+    }
+    .benefit-item-number{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .benefit-item-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .benefit-item-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .benefit-item-content{
+        gap: 7px;
+    }
+}

@@ -1,0 +1,171 @@
+.games-grid {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    align-content: flex-start;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+    gap: 10px;
+}
+
+.games-container {
+    max-width: 100%;
+    height: fit-content;
+    min-height: max(800px, 100vh);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.games-gradient{
+    position: absolute;
+    left: calc(-1700px + 50%);
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.games-block{
+    max-width: 1180px;
+    /*transform: translate(0, -50%);*/
+    /*top: 50%;*/
+    margin: 140px auto;
+    position: relative;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.more-button,
+.more-button * {
+    box-sizing: border-box;
+}
+
+.more-button {
+    background: rgba(14, 27, 105, 0.1);
+    border-radius: 20px;
+    border: 2px solid #4df292;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 65px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.1s ease-in-out;
+}
+
+
+.more-button:hover {
+    transition: background 0.1s ease-in-out;
+    background: #4df292;
+}
+
+.more-button:hover > .more-button-text {
+    transition: color 0.1s ease-in-out;
+    color: #e9e9eb;
+}
+
+.more-button:hover > .more-button-icon {
+    transition: background 0.1s ease-in-out;
+    background: #e9e9eb;
+}
+
+.more-button-text {
+    transition: color 0.1s ease-in-out;
+    color: #4df292;
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 900;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.more-button-icon {
+    transition: background 0.1s ease-in-out;
+    flex-shrink: 0;
+    height: 29px;
+    width: 29px;
+    position: relative;
+    overflow: visible;
+    background: #4df292;
+}
+
+.games-title,
+.games-title * {
+    box-sizing: border-box;
+}
+
+.games-title {
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    position: relative;
+    color: #e9e9eb;
+    text-shadow: rgba(255, 255, 255, 0.3) 0 0 20px;
+}
+
+.games-title-bl {
+    color: #4df292;
+}
+
+@media (max-width: 1200px) {
+    .games-block, .games-title{
+        max-width: 710px;
+    }
+    .games-container {
+        height: 1200px;
+    }
+
+}
+
+@media (max-width: 851px) {
+    .games-container {
+        padding: 10px;
+    }
+    .games-title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .games-block {
+        gap: 30px;
+        margin: 70px auto;
+    }
+    .games-grid{
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+
+    }
+    .games-container {
+        height: fit-content;
+        min-height: auto;
+    }
+    .more-button{
+        height: 52px;
+        border: 1px solid #4df292;
+        border-radius: 10px;
+    }
+
+    .more-button-text{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .more-button-icon {
+        height: 24px;
+        width: 24px;
+    }
+}

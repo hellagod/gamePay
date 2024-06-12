@@ -1,0 +1,62 @@
+
+.instruction-text,
+.instruction-text * {
+    box-sizing: border-box;
+}
+
+.instruction-text {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.instruction-text > li > span {
+    color: #0094ff;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.instruction-text > li > span:hover {
+    color: #2aa3ff;
+    cursor: pointer;
+}
+.instruction-title{
+    padding-left: 10px;
+}
+
+.instruction {
+    position: relative;
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 120px auto 155px auto;
+}
+
+@media (max-width: 1250px) {
+    .instruction{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 851px) {
+    .instruction-title{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .instruction{
+        gap: 20px;
+    }
+    .instruction-text{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .instruction-text > li{
+        margin-top: 16px;
+
+    }
+}

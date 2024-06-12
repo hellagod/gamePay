@@ -1,0 +1,70 @@
+.rec-tick-item-container,
+.rec-tick-item-container * {
+    box-sizing: border-box;
+}
+.rec-tick-item-container {
+    box-shadow: 0 0 15px 0 rgba(157, 85, 229, 0.6);
+    background: #0e1960;
+    border-radius: 9px;
+    border-style: solid;
+    border-color: #9d55e5;
+    border-width: 2px;
+    padding: 5px 20px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 90px;
+    position: relative;
+    width: fit-content;
+}
+.rec-tick-item-icon {
+    position: relative;
+}
+.rec-tick-item-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.35px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.rec-tick-item-title {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: "Roboto-Black", sans-serif;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 900;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.rec-tick-item-text {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 200;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (max-width: 851px) {
+    .rec-tick-item-container{
+        height: 70px;
+    }
+
+    .rec-tick-item-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+}

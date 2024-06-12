@@ -1,0 +1,75 @@
+.search_container, .search_img, .search_input {
+    box-sizing: border-box;
+}
+
+.search_container {
+    background: rgba(233, 233, 235, 0.15);
+    transition: background 0.1s ease-in-out;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    height: 35px;
+    position: relative;
+    margin-left: auto;
+    max-width: 340px;
+    width: 100%;
+    /*margin-right: 110px;*/
+}
+
+.search_container:hover{
+    background: rgba(233, 233, 235, 0.2);
+    transition: background 0.1s ease-in-out;
+}
+
+
+.search_img {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+
+.search_input {
+    color: #E9E9EB;
+    background-color: transparent;
+    border: 0;
+    text-align: left;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size:  16px;
+    line-height: 20px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border:none;
+    background-image:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+.search_input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1; /* Firefox */
+}
+
+.search_input::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 850px) {
+    .search_container{
+        display: none;
+    }
+}
+

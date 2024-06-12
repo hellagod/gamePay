@@ -1,0 +1,17 @@
+.instruction-gradient{
+    position: absolute;
+    left: calc(-1700px + 50%);
+    transform: translate(0, 10%) scale(0.9);
+}
+
+.payment-questions-gradient{
+    position: absolute;
+    left: calc(-1700px + 50%);
+    transform: translate(0, 15%) scale(0.9);
+}
+
+.payment-gradient{
+    position: absolute;
+    left: calc(-1700px + 50%);
+    transform: translate(0, -550px) scale(0.7) ;
+}

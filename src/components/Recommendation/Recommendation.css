@@ -1,0 +1,39 @@
+.rec-block-title {
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    position: relative;
+    color: #e9e9eb;
+    text-shadow: rgba(255, 255, 255, 0.3) 0 0 20px;
+    max-width: 1176px;
+    width: 100%;
+}
+
+.rec-block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rec-block{
+    z-index: 999;
+    position: relative;
+}
+
+@media (max-width: 1250px) {
+    .rec-block-text{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 851px) {
+    .rec-block-title{
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+
+}

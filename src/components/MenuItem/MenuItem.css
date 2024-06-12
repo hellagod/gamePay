@@ -1,0 +1,87 @@
+
+.menu-item-container,
+.menu-item-container * {
+    box-sizing: border-box;
+}
+
+.menu-item-container {
+    background: rgba(77, 20, 169, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    max-width: 340px;
+    box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.menu-item > div {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 900;
+    position: relative;
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-item > img {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transform: translate(-1.5px, -1.5px);
+    transition: transform 0.15s ease-in-out;
+    overflow: visible;
+}
+
+.menu-item-container:hover > .menu-item > img {
+    transition: transform 0.15s ease-in-out;
+    transform: translate(7px, -7px);
+}
+
+
+@media (max-width: 850px) {
+    .menu-item > div{
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    .menu-item-container{
+        max-width: none;
+        min-width: 170px;
+        padding: 11px 20px;
+        border-radius: 10px;
+    }
+
+    .menu-item > img {
+        width: 16px;
+        height: 16px;
+        transform: translate(10px, -1.5px);
+    }
+    .menu-item-container:hover > .menu-item > img {
+        transform: translate(13px, -4.5px);
+    }
+}

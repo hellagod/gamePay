@@ -1,0 +1,45 @@
+.header_button {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.header_button:hover > div{
+    background-color: #FFFFFF;
+    transition: background-color 0.2s ease-in-out;
+}
+.header_button:hover > span {
+    color: #FFFFFF;
+    transition: color 0.2s ease-in-out;
+}
+
+.header_button > div {
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #e9e9eb;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.header_button > span {
+    transition: color 0.2s ease-in-out;
+    color: #e9e9eb;
+    text-align: left;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (max-width: 851px) {
+    .header_button{
+        gap: 5px;
+    }
+}

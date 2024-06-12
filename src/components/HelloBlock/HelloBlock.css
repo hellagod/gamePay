@@ -1,0 +1,161 @@
+.pay-now-button,
+.pay-now-button * {
+    box-sizing: border-box;
+}
+.hello-block-container{
+    background-position: right ;
+}
+
+.hello-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: column;
+    height: 100%
+
+}
+
+.pay-now-button {
+    transition: background 0.2s ease-in-out;
+    background: #4df292;
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.pay-now {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 900;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pay-now-button:hover {
+    background: #7df2ae;
+    transition: background 0.2s ease-in-out;
+}
+
+.gabe-pay-title {
+    text-align: left;
+    color: #ffffff;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    position: relative;
+}
+
+.gabe-pay-title > span {
+    color: #3edc80;
+}
+
+.gabe-pay {
+    max-width: 1080px;
+    width: calc(100% - 60px);
+    top: 100px;
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bl-pay {
+    background: rgba(151, 71, 255, 0.7);
+    border-radius: 50%;
+    width: calc(100% - 30px);
+    height: 198px;
+    max-width: 900px;
+    position: absolute;
+    filter: blur(150px);
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        width: calc(100% - 60px);
+    }
+}
+
+
+@media (max-width: 851px) {
+
+    .pay-now-button{
+        max-width: 500px;
+        width: calc(100vw - 20px);
+    }
+
+    .gabe-pay{
+        width: fit-content;
+        padding: 0 0;
+    }
+    .menu {
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        bottom: 50px;
+    }
+
+    .gabe-pay-title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .pay-now{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .gabe-pay{
+        top: 200px;
+
+    }
+
+    .pay-now-button{
+        border-radius: 10px;
+        height: 52px;
+    }
+
+    .hello-block-container{
+        background-position: right -300px bottom 0;
+        min-height: 600px;
+    }
+    .hello-block{
+        justify-content: space-between;
+        position: relative;
+    }
+
+}

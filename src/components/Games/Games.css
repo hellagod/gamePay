@@ -1,0 +1,11 @@
+.games-questions-gradient{
+    position: absolute;
+    left: calc(-1700px + 50%);
+    transform: translate(0, 40%) scale(0.9);
+}
+
+.games-all-gradient{
+    position: absolute;
+    left: calc(-1700px + 50%);
+    transform: translate(0, -10%) scale(1.1) ;
+}

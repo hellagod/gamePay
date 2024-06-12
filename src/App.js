@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
+import GamesBlock from "./components/GamesBlock/GamesBlock";
+import Header from "./components/Header/Header";
+import Body from "./components/Body/Body";
+import SteamPayment from "./components/SteamPayment/SteamPayment";
+import GamePayment from "./components/GamePayment/GamePayment";
+import Games from "./components/Games/Games";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return <div id="fullContent">
+        <Router>
+            <Routes>
+                <Route path="/" element={<Body/>}/>
+                <Route path="/games" element={<Games/>}/>
+                <Route path="/steam" element={<SteamPayment/>}/>
+                <Route path="/games/:gameId" element={<GamePayment/>}/>
+            </Routes>
+        </Router>
     </div>
-  );
 }
 
 export default App;
+

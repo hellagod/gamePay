@@ -1,0 +1,311 @@
+.payment-block-container {
+    position: relative;
+    margin-top: 120px;
+}
+
+.payment-block,
+.payment-block * {
+    box-sizing: border-box;
+}
+
+
+.payment-block {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.payment-title {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border: 0;
+}
+
+.payment-title-icon {
+    height: 70px;
+    width: 70px;
+    border: 0;
+}
+
+.payment-title-icon::before {
+    border: 0;
+}
+
+.payment-title-text, .instruction-title {
+    text-align: left;
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    position: relative;
+    color: #e9e9eb;
+    text-shadow: rgba(255, 255, 255, 0.3) 0 0 20px;
+}
+
+.payment {
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 134, 203, 0.2);
+}
+
+.payment-left, .payment-right {
+    width: 50%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.payment-left {
+    gap: 40px;
+}
+
+.payment-right {
+    background: linear-gradient(136deg,
+    rgba(51.75, 25.47, 213.21, 0.40) -40%,
+    rgba(156.66, 84.53, 228.79, 0.40) 10%,
+    rgba(14.76, 167.34, 177.08, 0.40) 100%);
+    border-radius: 30px;
+}
+
+
+.payment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    background: linear-gradient(100deg, rgb(90, 66, 243) 0%, rgba(157, 85, 229) 47%, rgba(15, 167, 177) 100%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: 0;
+}
+
+.payment-left-title {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 28px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+
+.payment-right-title {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.payment-right-text {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 18px;
+    margin-bottom: 9px;
+    font-weight: 700;
+}
+
+.payment-right-text > span {
+    color: #c7c7c7;
+}
+
+.payment-right-amount {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-right-amount-title {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 25px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.payment-right-amount-value {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 33px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+.payment-right-discount-text {
+    color: #c1c1c1;
+    text-align: left;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.payment-right-discount-title {
+    background: #ef4b4c;
+    border-radius: 5px;
+    padding: 3px 9px 3px 9px;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.payment-right-discount {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-right-dog {
+    width: 100%;
+    text-align: center;
+    color: #e9e9eb;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.payment-right-promo-code {
+    margin-top: 40px;
+}
+
+.payment-right-button-container {
+    margin-top: 40px;
+    background: #45dd84;
+    border-radius: 10px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.payment-right-button-container:hover {
+    background: #7df2ae;
+}
+
+.payment-right-button {
+    color: #e9e9eb;
+    text-align: left;
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 24px;
+    line-height: 14px;
+    font-weight: 900;
+}
+
+.payment-right-dog-link:link {
+    color: #0094ff;
+}
+
+/* visited link */
+.payment-right-dog-link:visited {
+    color: #0094ff;
+}
+
+/* mouse over link */
+.payment-right-dog-link:hover {
+    color: #2aa3ff;
+}
+
+/* selected link */
+.payment-right-dog-link:active {
+    color: #0094ff;
+}
+
+
+@media (max-width: 1250px) {
+    .payment-block{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 851px) {
+    .payment{
+       flex-direction: column;
+        gap: 20px;
+    }
+    .payment-left, .payment-right {
+        width: 100%;
+        padding: 20px 10px 40px 10px;
+    }
+
+    .payment-right {
+        z-index: 0;
+        padding: 40px 10px 40px 10px;
+    }
+
+    .payment-title-icon{
+        width: 40px;
+        height: 40px;
+    }
+
+    .payment-title-text{
+        font-size: 22px;
+        line-height: 23px;
+    }
+
+    .payment-left-title{
+        display: none;
+    }
+    .payment-block{
+        padding: 0 0;
+    }
+
+    .payment-title{
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .payment::before {
+        background: transparent;
+    }
+
+    .payment {
+        border-radius: 30px;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+
+    .payment-right-amount-title{
+        font-size: 22px;
+        line-height: 21px;
+    }
+    .payment-right-amount-value{
+        font-size: 26px;
+        line-height: 30px   ;
+    }
+}
