@@ -128,10 +128,8 @@
 }
 
 @media (max-width: 851px) {
-    .benefits-background,
-    .second-background,
     .benefits {
-        height: 700px;
+        height: fit-content;
     }
 
     .benefits-title{

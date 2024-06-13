@@ -12,35 +12,23 @@
 
 .section-rec-ticker .scroll > .group-tick-items {
     animation: animate 250s linear infinite;
-    animation-delay: -250s;
+    animation-delay: 0s;
     display: flex;
     flex-direction: row;
     gap: 23px;
     align-items: center;
 }
 
+
 @keyframes animate {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-100%);
     }
 }
 
-.section-rec-ticker .scroll .group-tick-items:nth-child(2) {
-    animation: animate2 250s linear infinite;
-    animation-delay: -125s;
-}
-
-@keyframes animate2 {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-200%);
-    }
-}
 
 
 @media (max-width: 851px) {
