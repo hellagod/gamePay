@@ -1,9 +1,9 @@
 import './SteamPayment.css'
 import Header from "../Header/Header";
-import gradBack2 from "../../static/gradient-background-2.svg";
+import gradBack2 from "../../static/gradient-background-2.png";
 import Footer from "../Footer/Footer";
 import PaymentBlock from "../PaymentBlock/PaymentBlock";
-import gradBack1 from "../../static/gradient-background-1.svg";
+import gradBack1 from "../../static/gradient-background-1.png";
 import Instruction from "../Instruction/Instruction";
 import PaymentInput from "../PaymentInput/PaymentInput";
 import PaymentInputAmount from "../PaymentInputAmount/PaymentInputAmount";

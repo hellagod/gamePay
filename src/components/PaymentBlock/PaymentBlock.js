@@ -1,7 +1,7 @@
 import './PaymentBlock.css'
 import Instruction from "../Instruction/Instruction";
 
-export default function PaymentBlock({children, icon, title}) {
+export default function PaymentBlock({children, icon, title, onPay}) {
 
     return <div className="payment-block-container">
         <div className="payment-block">
@@ -25,7 +25,7 @@ export default function PaymentBlock({children, icon, title}) {
                         <del className="payment-right-discount-text">125.00 ₽</del>
                         <div className="payment-right-discount-title">-5%</div>
                     </div>
-                    <div className="payment-right-button-container">
+                    <div className="payment-right-button-container" onClick={onPay}>
                         <div className="payment-right-button">Оплатить 120.0 ₽</div>
                     </div>
                     <div className="payment-right-dog">Нажимая кнопку пополнить, я принимаю <a

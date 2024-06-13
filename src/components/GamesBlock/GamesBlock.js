@@ -2,7 +2,7 @@ import GameCard from "../GameCard/GameCard";
 import arrow from '../../static/arrow-right.svg'
 import arrowSmall from '../../static/arrow-small.svg'
 import './GamesBlock.css'
-import gradBack1 from "../../static/gradient-background-1.svg"
+import gradBack1 from "../../static/gradient-background-1.png"
 import {Navigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";

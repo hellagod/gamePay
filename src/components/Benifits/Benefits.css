@@ -131,7 +131,7 @@
     .benefits-background,
     .second-background,
     .benefits {
-        height: 570px;
+        height: 700px;
     }
 
     .benefits-title{
@@ -163,12 +163,4 @@
         filter: blur(150px);
     }
 
-}
-
-@media (max-width: 762px) {
-    .benefits-background,
-    .second-background,
-    .benefits {
-        height: 780px;
-    }
 }
