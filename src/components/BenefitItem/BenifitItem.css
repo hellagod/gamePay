@@ -76,7 +76,10 @@
 
 @media (max-width: 851px) {
     .benefit-item-container{
-        max-width: 355px;
+        margin-right: 10px;
+        margin-left: 10px;
+        max-width: 555px;
+        width: 100%;
         border: solid 2px #3edc80;
         padding: 15px;
         gap: 15px;

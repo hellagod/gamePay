@@ -18,7 +18,7 @@ function App() {
                 <Route path="/" element={<Body/>}/>
                 <Route path="/games" element={<Games/>}/>
                 <Route path="/steam" element={<SteamPayment/>}/>
-                <Route path="/games/:gameId" element={<GamePayment/>}/>
+                <Route path="/:gameId" element={<GamePayment/>}/>
             </Routes>
         </Router>
     </div>

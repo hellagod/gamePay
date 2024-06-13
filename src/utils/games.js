@@ -5,9 +5,8 @@ let gamesData = Array(22).fill({
     title: 'Clash of Clans',
     icon: icon,
     image: game,
-    to: '/games/clash_of_clans',
+    to: '/clash_of_clans',
     discount: '5'
 })
-
 
 export default gamesData
